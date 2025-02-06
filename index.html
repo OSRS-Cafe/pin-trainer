@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Oldschool Runescape Bank Pin Trainer @ OSRS.Cafe">
+        <title>Pin Trainer @ OSRS.Cafe</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Pin Trainer @ <a href="https://osrs.cafe" target="_blank">OSRS.Cafe</a></h1>
+            <canvas id="pin-canvas" width="780" height="489"></canvas>
+            <br>
+            <div>
+                <div style="text-align:left;">
+                    <h2>Create new bookmark</h2>
+                    <label for="setup-bookmark-name">Character Name</label><br/>
+                    <input id="setup-bookmark-name"><br/>
+                    <label for="setup-bookmark-pin">Pin</label><br/>
+                    <input id="setup-bookmark-pin"><br/>
+                    <button style="margin-top:5px;" id="setup-bookmark-open">Open</button>
+                </div><br/>
+                <div style="text-align:left;">
+                    <h2>FAQ</h2>
+                    <details>
+                        <summary>Project Links</summary>
+                        <a href="https://osrs.cafe" target="_blank">OSRS.Cafe</a><br/>
+                        <a href="https://github.com/OSRS-Cafe/pin-trainer" target="_blank">Github Repository</a><br>
+                        <a href="https://github.com/RuneStar/fonts" target="_blank">Fonts by RuneStar</a><br>
+                        <a href="https://stackoverflow.com/a/63499899" target="_blank">Hash Function from Stackoverflow</a><br>
+                    </details>
+                    <details>
+                        <summary>How do i use this?</summary>
+                        <p>1) Use the left inputs to create a new bookmark link</p>
+                        <p>2) Save the link in a password manager for easy access</p>
+                    </details>
+                    <details>
+                        <summary>Why save the link in a password manager?</summary>
+                        <p>While the pin in the URL is hashed, it's trivial to hash all the possible pins to get yours.</p>
+                        <p>This could happen by having your bookmarks ratted, in the case that you bookmarked it in your browser.</p>
+                        <p>That's why we recommend to save the link in a safe place, like a password manager.</p>
+                        <p>(The pin is hashed in the url so that someone seeing it cant instantly figure out the pin, you still have to keep the url safe!)</p>
+                    </details>
+                    <details>
+                        <summary>Is this safe to use?</summary>
+                        <p>Unless you save the link with your hashed pin in an unsafe location (This includes your browser!), this website is safe.</p>
+                        <p>The site runs locally via javascript only and is hosted on GitHub pages via Cloudflare proxy.</p>
+                        <p>You are free however to download the source code and run it locally!</p>
+                        <p>Check "How to run this locally" for a guide!</p>
+                    </details>
+                    <details>
+                        <summary>How to run this locally</summary>
+                        <p>The repository for this project is hosted <a href="https://github.com/OSRS-Cafe/pin-trainer" target="_blank">here</a>.</p>
+                        <p>You can download the source code there, or get a direct link <a href="https://github.com/OSRS-Cafe/pin-trainer/archive/refs/heads/main.zip" target="_blank">here</a>.</p>
+                        <p>Extract the source code into a folder of your choosing and open index.html!</p>
+                        <p>If you have any issues feel free to open an issue. Thank you! :)</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/setup.js"></script>
+    <script src="js/hash.js"></script>
+    <script src="js/app.js"></script>
+</html>
